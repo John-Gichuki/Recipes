@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linear_disclaimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/spacing_half_normal"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/four_margin"
+                android:src="@drawable/nav_disclaimer"/>
+            <TextView
+                android:layout_marginStart="@dimen/four_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disclaimer"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/text_disclaimer"
+                android:textStyle="bold"
+                android:padding="@dimen/four_margin"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:layout_marginTop="@dimen/spacing_half_normal"
+            android:layout_marginEnd="@dimen/spacing_normal"
+            android:background="@color/google_grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:padding="@dimen/spacing_half_normal"
+            android:text="About this App"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="@dimen/spacing_half_normal"
+            android:lineSpacingExtra="1.5dp"
+            android:text="@string/about_app" />
+
+
+    </LinearLayout>
+    </ScrollView>
+</layout>
